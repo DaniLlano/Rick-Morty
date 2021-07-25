@@ -22,7 +22,7 @@ function App() {
           <Loading /> : characters?.length > 0 ? (<CardContainer>
             {characters.map((characters) => (
             
-              <Cards characters={characters}/>
+              <Cards key={characters.id} characters={characters}/>
 
           ))}
              </CardContainer>) : <p>Can't find "{filter}"</p>

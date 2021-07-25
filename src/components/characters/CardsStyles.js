@@ -21,6 +21,8 @@ border-right: 1px rgba(40,40,40,0.35) solid;
 `
 
 export const ImgContainer = styled.div`
+display: flex;
+justify-content: center;
 width: 7rem;
 height: 7rem;
 margin: auto;
@@ -52,4 +54,14 @@ width: 0.7rem;
 height: 0.7rem;
 border-radius: 50%;
 margin: 0.5rem;
+`
+
+export const DataContainer = styled.div`
+display: flex;
+flex-direction: column;
+padding: 1rem 0;
+`
+
+export const Data = styled.p`
+margin: 0.3rem 1rem;
 `
