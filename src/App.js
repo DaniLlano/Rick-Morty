@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import Cards from './components/characters/Cards'
+import Header from './components/header/Header'
+import useFetch from './hooks/useFetch'
+import Loading from './components/loading/Loading'
+import {CardContainer} from './components/characters/CardsStyles'
+
+const API_URL = "https://rickandmortyapi.com/api/character/"
+const API_URL_FILTER = "?name="
 
 function App() {
+  const [filter, setFilter] = useState("")
+
+  const {loading, characters} = useFetch(`${API_URL}${API_URL_FILTER}${filter}`)
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header filter={filter} setFilter={setFilter}/>
+        <div>
+          {loading ? 
+          <Loading /> : characters?.length > 0 ? (<CardContainer>
+            {characters.map((characters) => (
+            
+              <Cards characters={characters}/>
+
+          ))}
+             </CardContainer>) : <p>Can't find "{filter}"</p>
+        }
+          
+        </div>
     </div>
   );
 }
