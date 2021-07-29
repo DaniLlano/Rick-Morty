@@ -46,7 +46,7 @@ display: flex;
 align-items: center;
 height: 1rem;
 width: fit-content;
-background: #777777;
+background: #666666;
 border-radius: 1rem;
 padding: 0.7rem;
 margin-left: 1rem;

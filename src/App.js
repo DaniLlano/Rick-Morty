@@ -25,7 +25,7 @@ function App() {
               <Cards key={characters.id} characters={characters}/>
 
           ))}
-             </CardContainer>) : <p>Can't find "{filter}"</p>
+             </CardContainer>) : <p>No hay personaje con el nombre "{filter}"</p>
         }
           
         </div>
