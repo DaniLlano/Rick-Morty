@@ -11,7 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(180deg,#000000,#66a6ff,#89f7fe);
+  background-color: #000000;
+  background-image: 
+  radial-gradient(at 47% 33%, hsl(212.37, 72%, 59%) 0, transparent 59%), 
+  radial-gradient(at 82% 65%, hsl(166.53, 72%, 60%) 0, transparent 55%);
+
   min-height: 100vh;
 
 }

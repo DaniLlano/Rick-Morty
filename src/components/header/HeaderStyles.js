@@ -34,22 +34,3 @@ border: 1px rgba(255,255,255,0.4) solid;
 border-bottom: 1px rgba(40,40,40,0.35) solid;
 border-right: 1px rgba(40,40,40,0.35) solid;
 `
-
-export const Button = styled.button`
-font-size: 17px;
-width: 5rem;
-cursor: pointer;
-outline: none;
-margin: 1rem 0.5rem;
-background: rgba(255, 255, 255, 0.40);
-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-border-radius: 10px;
-border: 1px rgba(255,255,255,0.4) solid;
-border-bottom: 1px rgba(40,40,40,0.35) solid;
-border-right: 1px rgba(40,40,40,0.35) solid;
-
-:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transition: 0.5s;
-}
-`

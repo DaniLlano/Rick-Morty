@@ -8,16 +8,15 @@ justify-content: center;
 `
 
 export const Card = styled.div`
+color: #fafafa;
 width: 15rem;
 height: 20rem;
 margin: 1rem;
-border-radius: 10px;
-backdrop-filter: blur(5px);
-background-color: rgba(0,191,255, 0.075);
-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-border: 1px rgba(255,255,255,0.1) solid;
-border-bottom: 1px rgba(40,40,40,0.35) solid;
-border-right: 1px rgba(40,40,40,0.35) solid;
+backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(17, 25, 40, 0.75);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
 `
 
 export const ImgContainer = styled.div`
@@ -46,6 +45,11 @@ export const StatusContainer = styled.div`
 display: flex;
 align-items: center;
 height: 1rem;
+width: fit-content;
+background: #777777;
+border-radius: 1rem;
+padding: 0.7rem;
+margin-left: 1rem;
 `
 
 export const Status = styled.span`
@@ -53,7 +57,7 @@ display: block;
 width: 0.7rem;
 height: 0.7rem;
 border-radius: 50%;
-margin: 0.5rem;
+margin: 0 0.3rem;
 `
 
 export const DataContainer = styled.div`
