@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, ImgContainer, Img, Name, StatusContainer, Status, DataContainer, Data } from './CardsStyles'
+import { Card, ImgContainer, Img, StyledP, StatusContainer, Status, DataContainer, Data } from './CardsStyles'
 
 
 function Cards({characters}) {
@@ -9,7 +9,7 @@ function Cards({characters}) {
                     <ImgContainer>
                     <Img src={characters.image} />
                     </ImgContainer>
-                <Name>{characters.name}</Name>
+                <StyledP>{characters.name}</StyledP>
                 <StatusContainer>
                     <Status className={characters.status} />
                     <p>{characters.status}</p>

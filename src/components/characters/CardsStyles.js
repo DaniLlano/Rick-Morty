@@ -34,7 +34,8 @@ max-height: 100%;
 border-radius: 4rem;
 `
 
-export const Name = styled.p`
+export const StyledP = styled.p`
+color: #fafafa;
 font-size: 1.5rem;
 font-weight: bold;
 text-align: center;
@@ -68,4 +69,11 @@ padding: 1rem 0;
 
 export const Data = styled.p`
 margin: 0.3rem 1rem;
+`
+
+export const ErrorMsj = styled(Card)`
+height: auto;
+width: fit-content;
+padding: 1.2rem;
+margin: auto;
 `

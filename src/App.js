@@ -3,7 +3,7 @@ import Cards from './components/characters/Cards'
 import Header from './components/header/Header'
 import useFetch from './hooks/useFetch'
 import Loading from './components/loading/Loading'
-import {CardContainer} from './components/characters/CardsStyles'
+import {CardContainer, ErrorMsj} from './components/characters/CardsStyles'
 
 const API_URL = "https://rickandmortyapi.com/api/character/"
 const API_URL_FILTER = "?name="
@@ -25,7 +25,7 @@ function App() {
               <Cards key={characters.id} characters={characters}/>
 
           ))}
-             </CardContainer>) : <p>No hay personaje con el nombre "{filter}"</p>
+             </CardContainer>) : <ErrorMsj>No hay personaje con el nombre "{filter}"</ErrorMsj>
         }
           
         </div>

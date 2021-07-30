@@ -21,6 +21,7 @@ justify-content: center;
 `
 
 export const Input = styled.input`
+color: #fafafa;
 font-size: 20px;
 padding: 0.4rem;
 width: 40%;
